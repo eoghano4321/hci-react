@@ -1,6 +1,7 @@
 // Home.js
 import React, { useState } from 'react';
 import NavBar from './components/NavBar';
+import Chat from './chat/Chat';
 
 function Home() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -48,6 +49,7 @@ function Home() {
                 <p key={index} dangerouslySetInnerHTML={{ __html: highlightSearchTerm(paragraph, searchTerm) }} />
               ))}
             </div>
+            <Chat />
           </div>
         </section>
       </div>
