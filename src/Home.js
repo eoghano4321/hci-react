@@ -6,10 +6,10 @@ import Chat from './chat/Chat';
 function Home() {
   const [searchTerm, setSearchTerm] = useState('');
   const content = {
-    title: "Eoghan O'Mahony",
+    title: "Epic",
     text: [
-      "A hardworking third-level student pursuing a career in the software development space",
-      "Currently studying Immersive Software Engineering at the University of Limerick",
+      "A groundbreaking device to control your computer with the movement of your head",
+      "The future is now",
     ],
   };
 
