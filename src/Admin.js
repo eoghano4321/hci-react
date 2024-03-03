@@ -14,7 +14,7 @@ class Admin extends Component {
     getUsers = async () => {
         // Get all users from the server
         try {
-            const response = await axios.get('http://localhost:3001/users');
+            const response = await axios.get('https://71ob5e7fj1.execute-api.us-east-1.amazonaws.com/users');
             this.setState({ users: response.data });
             console.log('Users:', this.state.users);
             console.log('Response:', response.data);
@@ -31,7 +31,7 @@ class Admin extends Component {
     deleteUser = async(userEmail) =>{
         // Delete user with the given userId
         try{
-            await axios.post('http://localhost:3001/remove', { email: userEmail});
+            await axios.post('https://71ob5e7fj1.execute-api.us-east-1.amazonaws.com/remove', { email: userEmail});
 
             // Update the users state
             this.setState({

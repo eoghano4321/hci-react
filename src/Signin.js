@@ -13,6 +13,7 @@ class Signin extends React.Component{
     };
 
 
+    apiurl = 'https://71ob5e7fj1.execute-api.us-east-1.amazonaws.com/'
 
     handleEmailChange = (e) => {
         this.setState({ email: e.target.value });
@@ -37,7 +38,7 @@ class Signin extends React.Component{
 
     const { email, password } = this.state;
     try {
-      await axios.post('http://localhost:3001/register', { email, password });
+      await axios.post(this.apiurl + '/register', { email, password });
       console.log('User registered successfully');
     } catch (error) {
       console.log('Error registering user:', error);
@@ -53,7 +54,7 @@ class Signin extends React.Component{
         console.log('Admin login successful!');
     }else{
         try {
-            await axios.post('http://localhost:3001/login', { email, password });
+            await axios.post(this.apiurl + '/login', { email, password });
             console.log('Login successful');
             this.props.dispatch({ type: 'LOGIN' });
         } catch (error) {
