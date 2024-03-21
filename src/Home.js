@@ -13,11 +13,10 @@ function Home() {
 
   const [searchTerm, setSearchTerm] = useState('');
   const content = {
-    title: "Freedome",
+    title: "FreeDome",
     text: [
-      "\"Freedom, hand's free\"",
-      "A groundbreaking device to control your computer with the movement of your head",
-      "The future is now",
+      "\"Freedom, Hand's free\"",
+      "Control your computer with the movement of your head",
     ],
   };
 
@@ -47,21 +46,6 @@ function Home() {
             />
           </div>
       <div>
-      {/* <div className="sketchfab-embed-wrapper">
-      <iframe className='sketchfab-embed'
-        title="Headset V10"
-        frameBorder="0"
-        allowFullScreen
-        mozAllowFullScreen={true}
-        webkitAllowFullScreen={true}
-        allow="autoplay; fullscreen; xr-spatial-tracking"
-        xr-spatial-tracking
-        execution-while-out-of-viewport
-        execution-while-not-rendered
-        web-share
-        src="https://sketchfab.com/models/4010bb23e4da456c8d28d69235596cb5/embed?autospin=1&autostart=1&ui_theme=dark"
-      ></iframe>
-    </div> */}
 
       <section className="main-content" style={backgroundImageStyle}>
           {/* Search Bar */}

@@ -33,18 +33,17 @@ h1{
 }
 
 .title{
-  color: white;
-  text-shadow: rgb(105, 105, 105) 0px 2px; 
-  text-align: left;
+  color: red;
+  text-shadow: white 0px 7px 10px; 
+  text-align: center;
   padding-bottom: 5%;
-  font-size: xx-large;  
+  font-size: xxx-large;  
 }
 
 .main-content {
   display: flex;
   justify-content: center;
   align-items: top;
-  text-align: left;
   padding: 4%;
   padding-bottom: 40%;
   height: 100%;
@@ -52,12 +51,17 @@ h1{
   color: white;
   /* max height of page */
   max-height: 100%;
+  text-shadow: red 0px 2px 5px;
 }
 
 .content-text {
   padding-top: 5%;
-  max-width: 600px;
+  width: 100%;
   margin-right: 7%;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
 }
 
 .content-image img {
