@@ -1,5 +1,6 @@
 import NavBar from "./components/NavBar";
 import './Contact.css';
+import Chat from './chat/Chat';
 
 import {state, useRef, useState, Component, createRef} from 'react';
 import React from "react";
@@ -23,16 +24,18 @@ class Contact extends Component {
     render() {
         return (
             <>
-            <NavBar currentPage={Contact}/>
-            <section className="container">
-                <h1>Contact Me</h1>
+            <NavBar />
+            
+            <Chat />
+            <section className="contact-container">
+                <h1>Feedback Form</h1>
                 <form ref={this.form} onSubmit={this.sendEmail}>
                     <div className="row">
                         <div className="col-25">
                             <label for="fname">First Name</label>
                         </div>
                         <div className="col-75">
-                            <input type="text" id="fname" name="fname" placeholder="Your name.."/>
+                            <input className="contact-input" type="text" id="fname" name="fname" placeholder="Your name.."/>
                         </div>
                     </div>
                     <div className="row">
@@ -40,7 +43,7 @@ class Contact extends Component {
                             <label for="lname">Last Name</label>
                         </div>
                         <div className="col-75">
-                            <input type="text" id="lname" name="lname" placeholder="Your last name.."/>
+                            <input className="contact-input" type="text" id="lname" name="lname" placeholder="Your last name.."/>
                         </div>
                     </div>
                     <div className="row">
@@ -48,12 +51,12 @@ class Contact extends Component {
                             <label for="email">Email</label>
                         </div>
                         <div className="col-75">
-                            <input type="text" id="email" name="email" placeholder="someone@example.com"/>
+                            <input className="contact-input" type="text" id="email" name="email" placeholder="someone@example.com"/>
                         </div>
                     </div>
                     <div className="row">
                         <div className="col-20">
-                            <label for="subject">Subject</label>
+                            <label for="subject">Feedback</label>
                         </div>
                         <div className="col-75">
                             <textarea id="subject" name="subject" placeholder="Write something.." style={{height: "200px"}}></textarea>

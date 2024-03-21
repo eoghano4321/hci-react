@@ -1,8 +1,12 @@
 .navbar {
-    background-color: black;
-    padding: 10px 0;
+    text-align: center;
+    
+    border-bottom: 1px solid white; 
+    background-color: maroon;
+    padding: 4% 4% 1% 1%;
     border-bottom: 1px solid white;
-    font-family: 'RandyGGRegular' !important;
+    /* no top padding */
+    padding-top: 1%;
 }
 
 .navbar ul{
@@ -14,7 +18,8 @@
 }
 
 .navbar ul li{
-    padding: 0 15px;
+    /* space out evenly accross screen width */
+    width: 100%;
     display: inline-block;
 }
 
@@ -22,16 +27,9 @@
     text-decoration: none;
     font-weight: bold;
     color: white;
+    font-size: 100%;
 }
 
-input[type=text]{
-    width: 100%;
-    padding: 2%;
-    border: 1px solid #ccc;
-    border-radius: 4%;
-    box-sizing: border-box;
-    margin-top: 2px;
-    margin-bottom: 2px;
-    resize: vertical;
-    text-align: center;
+.navbar ul li a:hover{
+    color: goldenrod;
 }

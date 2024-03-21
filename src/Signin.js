@@ -13,7 +13,7 @@ class Signin extends React.Component{
     };
 
 
-    apiurl = 'https://71ob5e7fj1.execute-api.us-east-1.amazonaws.com/'
+    apiurl = 'https://71ob5e7fj1.execute-api.us-east-1.amazonaws.com/beta'
 
     handleEmailChange = (e) => {
         this.setState({ email: e.target.value });
@@ -40,8 +40,12 @@ class Signin extends React.Component{
     try {
       await axios.post(this.apiurl + '/register', { email, password });
       console.log('User registered successfully');
+      
+      alert("Account created successfully! Please login to continue.");
+        this.setState({ isRegistering: false });
     } catch (error) {
       console.log('Error registering user:', error);
+      alert("Account creation failed");
     }
   };
 
@@ -56,9 +60,11 @@ class Signin extends React.Component{
         try {
             await axios.post(this.apiurl + '/login', { email, password });
             console.log('Login successful');
+
             this.props.dispatch({ type: 'LOGIN' });
         } catch (error) {
             console.log('Error logging in:', error);
+            alert("Login failed");
         }
     }
   };
@@ -81,7 +87,7 @@ class Signin extends React.Component{
   return (
     <>
         <NavBar currentPage={Signin}/>
-           <section className="container">
+           <section className="signin-container">
                 {!isLoggedIn.isLoggedIn ? (
                 isRegistering ? (
                     <div>

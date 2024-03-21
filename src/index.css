@@ -14,9 +14,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a:hover {
-  color: goldenrod;
-}
+
 
 body {
   margin: 0;
@@ -42,44 +40,24 @@ h1{
   font-size: xx-large;  
 }
 
-nav {
-  text-align: center;
-  
-  border-bottom: 1px solid white;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin-right: 20px;
-}
-
-a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-}
 .main-content {
   display: flex;
   justify-content: center;
   align-items: top;
   text-align: left;
-  padding: 50px;
-  height: 100vh;
-  background-color: black;
+  padding: 4%;
+  padding-bottom: 40%;
+  height: 100%;
+  /* background-color: black; */
   color: white;
+  /* max height of page */
+  max-height: 100%;
 }
 
 .content-text {
   padding-top: 5%;
   max-width: 600px;
-  margin-right: 20px;
+  margin-right: 7%;
 }
 
 .content-image img {
@@ -96,7 +74,7 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: darkred;
   cursor: pointer;
   transition: border-color 0.25s;
 }
@@ -125,4 +103,31 @@ button:focus-visible {
 .highlight {
   background-color: lightskyblue;
   font-weight: bold;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width of 65% of screen and centered in page*/
+  width: 65%;
+  margin: 0 auto;
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+
+.sketchfab-embed-wrapper{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 1%;
+  margin-bottom: 2%;
+  height: 100%;
+  flex-direction: column;
+}
+
+.sketchfab-embed{
+  width: 90%;
+  height: 100%;
 }

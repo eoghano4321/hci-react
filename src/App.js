@@ -1,6 +1,7 @@
 import Home from "./Home.js";
 import Contact from "./Contact.js";
 import Upload from "./Upload.js";
+import Download from "./Download.js";
 import { Routes, Route} from "react-router-dom";
 import Signin from "./Signin.js";
 import Admin from "./Admin.js";
@@ -20,6 +21,7 @@ function App() {
             <Route path="*" element={<Home />} />
             <Route path="contact" element={<Contact />} />
             <Route path="upload" element={<Upload />} />
+            <Route path="download" element={<Download />} />
             <Route path="signin" element={<Signin />} />
             <Route path="admin" element={<Admin />} />
         </Routes>

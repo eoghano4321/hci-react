@@ -1,25 +1,30 @@
 .signin-container {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding: 2% 25% 5% 25%;
+    border-radius: 1%;
+    background-color: black;
+    width: 50%;
+    padding: 2% 25% 5% 25%; 
+}
+
+.signin-container h1{
+    text-align: center;
+    color: white;
+    padding-bottom: 3%;
 }
 
 .col-15{
     color: white;
-    width: 50%;
-    margin-left: 20%; /* Some padding */    
+    margin-left: 20%; /* Some padding */  
+    margin-right: 20%;  
     padding-bottom: 5%;
 }
 
 .col-17{
     color: white;
-    width: 50%;
-    margin-left: 20%; /* Some padding */ 
+    margin-left:   0%; /* Some padding */  
+    margin-right: 0%;  
     padding-bottom: 5%;
-    margin-left: 10%;
+    justify-content: center;
+    display: flex;
 }
 
 input[type=text],

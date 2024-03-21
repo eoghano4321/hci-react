@@ -1,22 +1,21 @@
  /* Style inputs with type="text", select elements and textareas */
- input[type=text] {
-    width: 60%; /* Full width */
-    margin-left: 20%; /* Some padding */ 
-    margin-right: 20%; /* Some padding */ 
-    padding: 12px;
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
-    text-align: center;
+ .contact-input {
+  width: 100%; /* Full width */
+  padding: 2%; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 0.5%; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  /* center in container */
   }
+
   textarea {
     width: 100%; /* Full width */
-    padding: 12px; /* Some padding */ 
+    padding: 2%; /* Some padding */ 
     border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
+    border-radius: 0.5%; /* Rounded borders */
     box-sizing: border-box; /* Make sure that padding and width stays in place */
     margin-top: 6px; /* Add a top margin */
     margin-bottom: 16px; /* Bottom margin */
@@ -27,12 +26,13 @@
   input[type=submit] {
     background-color: #04AA6D;
     color: white;
-    padding: 12px 20px;
+    padding: 2% 3%;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     width: 20%;
-    margin-left: 40%;
+    
+    margin-left: 40%; /* Some padding */
   }
   
   /* When moving the mouse over the submit button, add a darker green color */
@@ -41,13 +41,13 @@
   }
   
   /* Add a background color and some padding around the form */
-  .container {
+  .contact-container {
     border-radius: 5px;
     background-color: black;
     width: 50%;
     padding: 2% 25% 5% 25%; 
   } 
-  .container h1{
+  .contact-container h1{
     text-align: center;
     color: white;
     padding-bottom: 3%;
@@ -58,10 +58,36 @@
     
     margin-left: 20%; /* Some padding */ 
     margin-right: 20%; /* Some padding */ 
+    padding-bottom: 5%;
+    justify-content: center;
+    display: flex;
   }
 
   .col-20 {
-    
+    margin-left: 20%; /* Some padding */ 
+    margin-right: 20%; /* Some padding */ 
+    padding-bottom: 5%;
+    justify-content: center;
+    display: flex;
+  }
+
+  .col-75{
     margin-left: 0%; /* Some padding */ 
     margin-right: 0%; /* Some padding */ 
+    padding-bottom: 5%;
+    justify-content: center;
+    display: flex;
+  }
+
+  .ChatBox{
+    border-radius: 1%;
+    bottom: 2%;
+    box-shadow: 5px 5px 13px rgba(91,81,81,.4);
+    display: flex;
+    justify-content: center;
+    margin: 5% 0;
+    position: fixed;
+    right: 5%;
+    z-index: 6;
+    max-width: 15%;
   }
